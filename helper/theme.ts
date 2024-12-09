@@ -16,4 +16,10 @@ export const theme = {
     redux: SiRedux,
     reactQuery: SiReactquery,
   },
+  text: {
+    size: {
+      phone: "12px",
+      laptop: "14px",
+    },
+  },
 };

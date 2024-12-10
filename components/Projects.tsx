@@ -42,7 +42,7 @@ const Projects: FC = () => {
   }, []);
 
   return (
-    <div className="bg-gray-100 border-t-2 rounded-t-[90px] p-20 h-">
+    <div className="bg-gray-100 p-20 ">
       <div className=" w-4/5  mx-auto   grid grid-cols-1 lg:grid-cols-2 gap-20">
         {projects.map((proj) => (
           <div className=" border border-gray-200 p-5 rounded-md bg-white flex flex-col gap-5 items-center cursor-pointer ">

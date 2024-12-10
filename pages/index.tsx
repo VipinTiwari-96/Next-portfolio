@@ -3,6 +3,7 @@ import React, { FC } from "react";
 import Header from "../components/Header";
 import Animation from "../components/Animation";
 import Projects from "../components/Projects";
+import Footer from "../components/Footer";
 
 const Index: FC = () => {
   return (
@@ -10,6 +11,7 @@ const Index: FC = () => {
       <Header />
       <Animation />
       <Projects />
+      <Footer />
     </div>
   );
 };

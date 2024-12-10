@@ -2,10 +2,16 @@ import React, { FC, useMemo } from "react";
 import { theme } from "../helper/theme";
 
 const Animation: FC = () => {
-  const iconKeys = useMemo(() => Object.keys(theme.icons), []);
+  const iconKeys = useMemo(
+    () =>
+      Object.keys(theme.icons).filter(
+        (key) => !["email", "whatsApp", "linkedin"].includes(key)
+      ),
+    []
+  );
 
   return (
-    <div className=" relative animate-scroll-right-to-left ease-linear duration-1000 flex justify-between items-center h-[15rem]">
+    <div className=" h-[15rem] animate-scroll-right-to-left flex justify-between items-center ">
       {iconKeys.map((key) => {
         const Icon = theme.icons[key];
         return (

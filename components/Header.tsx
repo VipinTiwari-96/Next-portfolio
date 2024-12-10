@@ -1,12 +1,16 @@
 import React, { FC } from "react";
+// helper
+import { socialLinks } from "../helper/theme";
+// shared
+import Link from "./shared/Link";
 
 const Header: FC = () => {
   return (
     <div className="bg-gray-100 border-b-2 rounded-b-[90px] h-[40rem] flex flex-col">
       <div className="h-[4rem] flex gap-4 justify-end items-end pr-20">
-        <a className="cursor-pointer hover:underline">Linkedin</a>/
-        <a className="cursor-pointer hover:underline">Github</a>/
-        <a className="cursor-pointer hover:underline">Instagram</a>
+        <Link link={socialLinks.linkedin} name="Linkedin" />/
+        <Link link={socialLinks.github} name="Github" />/
+        <Link link={socialLinks.instagram} name="Instagram" />
       </div>
 
       <div className="m-auto w-2/3 xl:w-1/2 flex flex-col items-center justify-center gap-5 p-4">

@@ -1,4 +1,6 @@
 import React, { FC, useMemo } from "react";
+// shared
+import Link from "./shared/Link";
 
 type Project = {
   name: string;
@@ -35,8 +37,8 @@ const Projects: FC = () => {
       },
       {
         name: "Pomo-doro app",
-        img: "https://i.ibb.co/djZgH2H/Screenshot-from-2024-12-09-17-03-59.png",
         link: "https://vipin-pomodoro.netlify.app/",
+        img: "https://i.ibb.co/djZgH2H/Screenshot-from-2024-12-09-17-03-59.png",
       },
     ];
   }, []);
@@ -52,7 +54,7 @@ const Projects: FC = () => {
               className="w-full h-full border p-1 bg-gray-100 rounded-md hover:shadow-md hover:shadow-gray-400"
             />
             <span className="hover:underline">
-              <a href={proj.link}>{proj.name}</a>
+              <Link link={proj.link} name={proj.name} />
             </span>
           </div>
         ))}

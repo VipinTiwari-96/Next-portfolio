@@ -1,5 +1,8 @@
 import React, { FC } from "react";
+// helper
 import { socialLinks, theme } from "../helper/theme";
+// shared
+import Link from "./shared/Link";
 
 const Footer: FC = () => {
   return (
@@ -23,13 +26,7 @@ const Footer: FC = () => {
 
           <div className="flex  w-full justify-between flex-wrap items-center gap-2">
             <theme.icons.linkedin size={30} />
-            <a
-              href={socialLinks.linkedin}
-              className="cursor-pointer hover:underline truncate"
-              target="_blank"
-            >
-              {socialLinks.linkedin}
-            </a>
+            <Link link={socialLinks.linkedin} name={socialLinks.linkedin} />
           </div>
         </div>
       </div>

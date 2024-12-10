@@ -1,4 +1,5 @@
 import React, { FC } from "react";
+import { Typewriter } from "react-simple-typewriter";
 // helper
 import { socialLinks } from "../helper/theme";
 // shared
@@ -19,8 +20,21 @@ const Header: FC = () => {
           alt="profile_image"
           className="border rounded-full w-32 h-32"
         />
-        <span className="sm:text-3xl xl:text-4xl font-bold text-gray-700 text-wrap text-center w-1/2">
-          Experience in building digital projects in React
+        <span className="text-xl md:text-3xl xl:text-4xl font-bold text-gray-700 text-wrap text-center w-1/2 flex flex-col">
+          <span>
+            Hi! This is{" "}
+            <span className="text-blue-500">
+              <Typewriter
+                words={["Vipin Tiwari"]}
+                loop={false}
+                cursor
+                typeSpeed={70}
+                deleteSpeed={50}
+              />
+            </span>
+            ,
+          </span>
+          <span> experience in building digital projects in React</span>
         </span>
       </div>
     </div>

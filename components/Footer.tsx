@@ -42,7 +42,14 @@ const Footer: FC = () => {
           <div className="flex  w-full justify-between flex-wrap items-center gap-2">
             <theme.icons.email size={30} />
             <span className="flex gap-5 items-center">
-              vipinvipin1997vipin@gmail.com{" "}
+              <span className="relative ">
+                <span className="relative z-10">
+                  vipinvipin1997vipin@gmail.com
+                </span>
+                {isEmailCopied && (
+                  <div className="w-60 h-6 absolute top-0 animate-fillBg bg-blue-500  rounded-sm "></div>
+                )}
+              </span>
               <span
                 className="bg-white p-1 rounded-md cursor-pointer w-16"
                 onClick={handleEmailCopy}
@@ -54,7 +61,12 @@ const Footer: FC = () => {
           <div className="flex  w-full justify-between flex-wrap items-center gap-2">
             <theme.icons.whatsApp size={30} />
             <span className="flex gap-5 items-center">
-              9634963546{" "}
+              <span className="relative ">
+                <span className="relative z-10">9634963546</span>
+                {isNumberCopied && (
+                  <div className="w-60 h-6 absolute top-0 animate-fillBg bg-blue-500 rounded-sm"></div>
+                )}
+              </span>
               <span
                 className="bg-white p-1 rounded-md cursor-pointer w-16"
                 onClick={handleNumberCopy}

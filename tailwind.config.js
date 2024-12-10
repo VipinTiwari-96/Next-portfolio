@@ -12,12 +12,17 @@ module.exports = {
     extend: {
       keyframes: {
         "scroll-right-to-left": {
-          "0%": { transform: "translateX(100%)" }, // Start off-screen to the right
-          "100%": { transform: "translateX(-99%)" }, // Move completely off-screen to the left
+          "0%": { transform: "translateX(100%)" },
+          "100%": { transform: "translateX(-99%)" },
+        },
+        fillBg: {
+          "0%": { width: "0%" },
+          "100%": { width: "100%" },
         },
       },
       animation: {
         "scroll-right-to-left": "scroll-right-to-left 15s linear infinite",
+        fillBg: "fillBg 1s forwards",
       },
     },
     fontFamily: { sans: ["Sans-serif", "Arial"] },

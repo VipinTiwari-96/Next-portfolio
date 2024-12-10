@@ -53,9 +53,7 @@ const Projects: FC = () => {
               alt=""
               className="w-full h-full border p-1 bg-gray-100 rounded-md hover:shadow-md hover:shadow-gray-400"
             />
-            <span className="hover:underline">
-              <Link link={proj.link} name={proj.name} />
-            </span>
+            <Link link={proj.link} name={proj.name} />
           </div>
         ))}
       </div>

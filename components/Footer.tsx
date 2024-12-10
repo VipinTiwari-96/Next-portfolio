@@ -9,7 +9,7 @@ const Footer: FC = () => {
     <div className="bg-gray-100 border-t-2 rounded-t-[90px] p-20 mt-40">
       <div className="w-2/3 mx-auto  text-center h-[15rem] flex flex-col gap-20">
         <div className="text-xl lg:text-3xl font-semibold text-gray-700">
-          Get in touch with me.
+          Get in touch with me
         </div>
 
         <div

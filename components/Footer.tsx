@@ -65,7 +65,7 @@ const Footer: FC = () => {
                 <span
                   className={`relative z-10 ${isNumberCopied && "text-white"}`}
                 >
-                  9634963546
+                  +91 9634963546
                 </span>
                 {isNumberCopied && (
                   <div className="w-60 h-6 absolute top-0 animate-fillBg bg-blue-600 rounded-sm"></div>

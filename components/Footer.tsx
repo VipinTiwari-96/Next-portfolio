@@ -1,8 +1,6 @@
 import React, { FC, useEffect, useState } from "react";
 // helper
-import { socialLinks, theme } from "../helper/theme";
-// shared
-import Link from "./shared/Link";
+import { theme } from "../helper/theme";
 
 const Footer: FC = () => {
   const [isEmailCopied, setIsEmailCopied] = useState<boolean>(false);
@@ -74,11 +72,6 @@ const Footer: FC = () => {
                 {isNumberCopied ? "copied!" : "copy"}
               </span>
             </span>
-          </div>
-
-          <div className="flex  w-full justify-between flex-wrap items-center gap-2">
-            <theme.icons.linkedin className="w-5 h-5 lg:w-8 lg:h-8" />
-            <Link link={socialLinks.linkedin} name={socialLinks.linkedin} />
           </div>
         </div>
       </div>

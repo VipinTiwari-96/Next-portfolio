@@ -40,7 +40,7 @@ const Footer: FC = () => {
           className={`lg:w-1/2 mx-auto flex flex-col items-center gap-5 text-[12px] xl:text-[16px]`}
         >
           <div className="flex  w-full justify-between flex-wrap items-center gap-2">
-            <theme.icons.email size={30} />
+            <theme.icons.email className="w-5 h-5 lg:w-8 lg:h-8" />
             <span className="flex gap-5 items-center">
               <span className="relative ">
                 <span className="relative z-10">
@@ -59,7 +59,7 @@ const Footer: FC = () => {
             </span>
           </div>
           <div className="flex  w-full justify-between flex-wrap items-center gap-2">
-            <theme.icons.whatsApp size={30} />
+            <theme.icons.whatsApp className="w-5 h-5 lg:w-8 lg:h-8" />
             <span className="flex gap-5 items-center">
               <span className="relative ">
                 <span className="relative z-10">9634963546</span>
@@ -77,7 +77,7 @@ const Footer: FC = () => {
           </div>
 
           <div className="flex  w-full justify-between flex-wrap items-center gap-2">
-            <theme.icons.linkedin size={30} />
+            <theme.icons.linkedin className="w-5 h-5 lg:w-8 lg:h-8" />
             <Link link={socialLinks.linkedin} name={socialLinks.linkedin} />
           </div>
         </div>

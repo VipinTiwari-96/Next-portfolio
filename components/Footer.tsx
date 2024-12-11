@@ -13,7 +13,7 @@ const Footer: FC = () => {
 
   const handleNumberCopy = () => {
     setIsNumberCopied(true);
-    navigator.clipboard.writeText("9634963546");
+    navigator.clipboard.writeText("+91 9634963546");
   };
 
   useEffect(() => {

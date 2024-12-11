@@ -41,7 +41,9 @@ const Footer: FC = () => {
             <theme.icons.email className="w-5 h-5 lg:w-8 lg:h-8" />
             <span className="flex gap-5 items-center">
               <span className="relative ">
-                <span className="relative z-10">
+                <span
+                  className={`relative z-10 ${isEmailCopied && "text-white"}`}
+                >
                   vipinvipin1997vipin@gmail.com
                 </span>
                 {isEmailCopied && (
@@ -60,7 +62,11 @@ const Footer: FC = () => {
             <theme.icons.whatsApp className="w-5 h-5 lg:w-8 lg:h-8" />
             <span className="flex gap-5 items-center">
               <span className="relative ">
-                <span className="relative z-10">9634963546</span>
+                <span
+                  className={`relative z-10 ${isNumberCopied && "text-white"}`}
+                >
+                  9634963546
+                </span>
                 {isNumberCopied && (
                   <div className="w-60 h-6 absolute top-0 animate-fillBg bg-blue-500 rounded-sm"></div>
                 )}
